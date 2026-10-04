@@ -1,31 +1,44 @@
 import "./App.css";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
+
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import CppProgrammingProjects from "./pages/CppProgrammingProjects";
+import MyFirstPortfolio from "./pages/MyFirstPortfolio";
+import EngineeringProjects from "./pages/EngineeringProjects";
 
 function App() {
   return (
     <div className="portfolio">
-
       <Navbar />
 
-      <Hero />
+      <Routes>
+        {/* Home Page */}
+        <Route path="/" element={<Home />} />
 
-      <About />
+        {/* C++ Programming Projects Page */}
+        <Route
+          path="/projects/cpp-programming"
+          element={<CppProgrammingProjects />}
+        />
 
-      <Skills />
+        {/* My First Portfolio Page */}
+        <Route
+          path="/projects/my-first-portfolio"
+          element={<MyFirstPortfolio />}
+        />
 
-      <Projects />
-
-      <Contacts />
+        {/* Engineering Projects Page */}
+        <Route
+          path="/projects/engineering-projects"
+          element={<EngineeringProjects />}
+        />
+      </Routes>
 
       <Footer />
-
     </div>
   );
 }

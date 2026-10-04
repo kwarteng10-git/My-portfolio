@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import cppProject from "../assets/images/cpp-project.png";
 import electronicsProject from "../assets/images/electronics-project.png";
 import portfolioWebsite from "../assets/images/portfolio-website.png";
@@ -10,20 +12,25 @@ function Projects() {
         "A collection of beginner C++ projects focused on programming fundamentals, problem solving, and object-oriented programming.",
       technologies: ["C++", "OOP", "Problem Solving"],
       image: cppProject,
+      path: "/projects/cpp-programming",
     },
+ 
     {
       title: "My First Portfolio",
       description:
         "My first personal portfolio website built to showcase my engineering background, programming skills, and projects.",
       technologies: ["React", "JavaScript", "CSS"],
       image: portfolioWebsite,
+      path: "/projects/my-first-portfolio",
     },
+
     {
       title: "Engineering Projects",
       description:
         "Practical engineering projects combining electronics, programming, and problem solving to explore real-world applications.",
       technologies: ["MATLAB", "Electronics", "Engineering"],
       image: electronicsProject,
+      path: "/projects/engineering-projects",
     },
   ];
 
@@ -57,9 +64,9 @@ function Projects() {
               ))}
             </div>
 
-            <a href="#" className="project-link">
+            <Link to={project.path} className="project-link">
               View Project <span>→</span>
-            </a>
+            </Link>
           </div>
         ))}
       </div>
