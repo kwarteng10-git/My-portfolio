@@ -1,3 +1,4 @@
+
 function Hero() {
   return (
     <section className="hero" id="home">
@@ -108,11 +109,6 @@ function Hero() {
           </a>
         </div>
 
-        <div className="hero-scroll">
-          <span>Scroll to explore</span>
-          <span className="scroll-arrow">↓</span>
-        </div>
-
       </div>
 
     </section>
@@ -120,3 +116,4 @@ function Hero() {
 }
 
 export default Hero;
+
