@@ -931,3 +931,7 @@ footer {
   margin-bottom: 20px;
   display: block;
 }
+/* Remove hamburger button completely */
+.menu-toggle {
+  display: none !important;
+}
