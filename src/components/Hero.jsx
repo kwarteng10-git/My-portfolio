@@ -50,7 +50,6 @@ function Hero() {
         </div>
 
         <div className="code-window side-window">
-
           <div className="window-bar">
             <span></span>
             <span></span>
@@ -69,17 +68,15 @@ function Hero() {
 
             <p>{"}"}</p>
           </div>
-
         </div>
 
         <div className="keyboard"></div>
-
       </div>
 
-      {/* Overlay */}
+      {/* Dark overlay */}
       <div className="hero-overlay"></div>
 
-      {/* Hero content */}
+      {/* Main hero content */}
       <div className="hero-content">
 
         <p className="intro">
@@ -91,18 +88,17 @@ function Hero() {
         </h1>
 
         <h2>
-          Electrical & Electronic Engineering Student{" "}
-          <span>|</span> Developer
+          Electrical & Electronic Engineering Student
+          <span> | </span>
+          Front-End Developer
         </h2>
 
         <p className="hero-description">
-          I think in circuits, but I build in code. I'm passionate about
-          software development, engineering, and creating technology that
-          solves real-world problems.
+          I combine engineering thinking with modern web development to
+          build practical, responsive, and user-focused digital experiences.
         </p>
 
         <div className="hero-buttons">
-
           <a href="#projects" className="btn primary-btn">
             Explore My Projects →
           </a>
@@ -110,7 +106,11 @@ function Hero() {
           <a href="#contact" className="btn secondary-btn">
             Contact Me
           </a>
+        </div>
 
+        <div className="hero-scroll">
+          <span>Scroll to explore</span>
+          <span className="scroll-arrow">↓</span>
         </div>
 
       </div>
